@@ -16,5 +16,30 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+
+            this.Hide();
+
+            Loginloginform loginloginForm = new Loginloginform();
+            loginloginForm.Show();
+        }
+
+        private void Signupforside_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+
+            this.Hide();
+
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
     }
 }
