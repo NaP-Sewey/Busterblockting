@@ -165,6 +165,9 @@
   <data name="Loginloginform1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Impact, 11.25pt</value>
   </data>
+  <data name="Loginloginform1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="Loginloginform1.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 19</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Impact, 11.25pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 19</value>
@@ -252,11 +258,14 @@
   <data name="label5.Text" xml:space="preserve">
     <value>___________________</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtConfirmPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 276</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtConfirmPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 16</value>
+  </data>
+  <data name="txtConfirmPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -324,16 +333,13 @@
   <data name="label9.Text" xml:space="preserve">
     <value>___________________</value>
   </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtMail.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 16</value>
   </data>
-  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtPhonenumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 16</value>
   </data>
-  <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 16</value>
-  </data>
-  <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">

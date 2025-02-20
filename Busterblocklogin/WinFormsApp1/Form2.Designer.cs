@@ -41,15 +41,15 @@
             textBox2 = new TextBox();
             label4 = new Label();
             label5 = new Label();
-            textBox3 = new TextBox();
+            txtConfirmPassword = new TextBox();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
+            txtMail = new TextBox();
+            txtPhonenumber = new TextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -137,13 +137,13 @@
             label5.ForeColor = Color.Yellow;
             label5.Name = "label5";
             // 
-            // textBox3
+            // txtConfirmPassword
             // 
-            resources.ApplyResources(textBox3, "textBox3");
-            textBox3.BackColor = SystemColors.HotTrack;
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.ForeColor = Color.Yellow;
-            textBox3.Name = "textBox3";
+            resources.ApplyResources(txtConfirmPassword, "txtConfirmPassword");
+            txtConfirmPassword.BackColor = SystemColors.HotTrack;
+            txtConfirmPassword.BorderStyle = BorderStyle.None;
+            txtConfirmPassword.ForeColor = Color.Yellow;
+            txtConfirmPassword.Name = "txtConfirmPassword";
             // 
             // label6
             // 
@@ -169,54 +169,55 @@
             label9.ForeColor = Color.Yellow;
             label9.Name = "label9";
             // 
-            // textBox4
+            // txtMail
             // 
-            resources.ApplyResources(textBox4, "textBox4");
-            textBox4.BackColor = SystemColors.HotTrack;
-            textBox4.BorderStyle = BorderStyle.None;
-            textBox4.ForeColor = Color.Yellow;
-            textBox4.Name = "textBox4";
-            textBox4.TextChanged += textBox4_TextChanged;
+            resources.ApplyResources(txtMail, "txtMail");
+            txtMail.BackColor = SystemColors.HotTrack;
+            txtMail.BorderStyle = BorderStyle.None;
+            txtMail.ForeColor = Color.Yellow;
+            txtMail.Name = "txtMail";
+            txtMail.TextChanged += textBox4_TextChanged;
             // 
-            // textBox5
+            // txtPhonenumber
             // 
-            resources.ApplyResources(textBox5, "textBox5");
-            textBox5.BackColor = SystemColors.HotTrack;
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.ForeColor = Color.Yellow;
-            textBox5.Name = "textBox5";
-            textBox5.TextChanged += textBox5_TextChanged;
+            resources.ApplyResources(txtPhonenumber, "txtPhonenumber");
+            txtPhonenumber.BackColor = SystemColors.HotTrack;
+            txtPhonenumber.BorderStyle = BorderStyle.None;
+            txtPhonenumber.ForeColor = Color.Yellow;
+            txtPhonenumber.Name = "txtPhonenumber";
+            txtPhonenumber.TextChanged += textBox5_TextChanged;
             // 
-            // textBox6
+            // txtUsername
             // 
-            resources.ApplyResources(textBox6, "textBox6");
-            textBox6.BackColor = SystemColors.HotTrack;
-            textBox6.BorderStyle = BorderStyle.None;
-            textBox6.ForeColor = Color.Yellow;
-            textBox6.Name = "textBox6";
+            resources.ApplyResources(txtUsername, "txtUsername");
+            txtUsername.BackColor = SystemColors.HotTrack;
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.ForeColor = Color.Yellow;
+            txtUsername.Name = "txtUsername";
+            txtUsername.TextChanged += textBox6_TextChanged;
             // 
-            // textBox7
+            // txtPassword
             // 
-            resources.ApplyResources(textBox7, "textBox7");
-            textBox7.BackColor = SystemColors.HotTrack;
-            textBox7.BorderStyle = BorderStyle.None;
-            textBox7.ForeColor = Color.Yellow;
-            textBox7.Name = "textBox7";
+            resources.ApplyResources(txtPassword, "txtPassword");
+            txtPassword.BackColor = SystemColors.HotTrack;
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.ForeColor = Color.Yellow;
+            txtPassword.Name = "txtPassword";
             // 
             // Form2
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(txtPhonenumber);
+            Controls.Add(txtMail);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(textBox3);
+            Controls.Add(txtConfirmPassword);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(textBox2);
@@ -249,14 +250,14 @@
         private TextBox textBox2;
         private Label label4;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox txtConfirmPassword;
         private Label label6;
         private Label label7;
         private Label label8;
         private Label label9;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox txtMail;
+        private TextBox txtPhonenumber;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
     }
 }
