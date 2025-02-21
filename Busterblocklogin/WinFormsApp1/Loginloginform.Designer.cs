@@ -32,12 +32,10 @@ namespace WinFormsApp1
             label1 = new Label();
             Loginloginform1 = new Label();
             _1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            Close = new Button();
-            Minimize = new Button();
             LoginLoginside = new Button();
             SuspendLayout();
             // 
@@ -45,9 +43,9 @@ namespace WinFormsApp1
             // 
             label1.Font = new Font("Impact", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Yellow;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(1, 12);
             label1.Name = "label1";
-            label1.Size = new Size(214, 47);
+            label1.Size = new Size(281, 63);
             label1.TabIndex = 1;
             label1.Text = "Busterblock";
             // 
@@ -56,9 +54,9 @@ namespace WinFormsApp1
             Loginloginform1.AutoSize = true;
             Loginloginform1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Loginloginform1.ForeColor = Color.Yellow;
-            Loginloginform1.Location = new Point(105, 82);
+            Loginloginform1.Location = new Point(120, 109);
             Loginloginform1.Name = "Loginloginform1";
-            Loginloginform1.Size = new Size(73, 19);
+            Loginloginform1.Size = new Size(91, 23);
             Loginloginform1.TabIndex = 2;
             Loginloginform1.Text = "Username";
             Loginloginform1.Click += Loginloginform1_Click;
@@ -68,43 +66,45 @@ namespace WinFormsApp1
             _1.AutoSize = true;
             _1.Font = new Font("Stencil", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             _1.ForeColor = Color.Yellow;
-            _1.Location = new Point(72, 113);
+            _1.Location = new Point(82, 151);
             _1.Name = "_1";
-            _1.Size = new Size(140, 14);
+            _1.Size = new Size(160, 18);
             _1.TabIndex = 3;
             _1.Text = "___________________";
             _1.Click += _1_Click;
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.BackColor = SystemColors.HotTrack;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.ForeColor = Color.Yellow;
-            textBox1.Location = new Point(82, 104);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(119, 16);
-            textBox1.TabIndex = 4;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtUsername.BackColor = SystemColors.HotTrack;
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.ForeColor = Color.Yellow;
+            txtUsername.Location = new Point(94, 144);
+            txtUsername.Margin = new Padding(3, 4, 3, 4);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(136, 20);
+            txtUsername.TabIndex = 4;
+            txtUsername.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.BackColor = SystemColors.HotTrack;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.ForeColor = Color.Yellow;
-            textBox2.Location = new Point(82, 191);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(119, 16);
-            textBox2.TabIndex = 7;
-            textBox2.TextChanged += textBox2_TextChanged;
+            txtPassword.BackColor = SystemColors.HotTrack;
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.ForeColor = Color.Yellow;
+            txtPassword.Location = new Point(94, 260);
+            txtPassword.Margin = new Padding(3, 4, 3, 4);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(136, 20);
+            txtPassword.TabIndex = 7;
+            txtPassword.TextChanged += textBox2_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Stencil", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Yellow;
-            label2.Location = new Point(72, 200);
+            label2.Location = new Point(82, 267);
             label2.Name = "label2";
-            label2.Size = new Size(140, 14);
+            label2.Size = new Size(160, 18);
             label2.TabIndex = 6;
             label2.Text = "___________________";
             label2.Click += label2_Click;
@@ -114,41 +114,12 @@ namespace WinFormsApp1
             label3.AutoSize = true;
             label3.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Yellow;
-            label3.Location = new Point(105, 169);
+            label3.Location = new Point(120, 225);
             label3.Name = "label3";
-            label3.Size = new Size(71, 19);
+            label3.Size = new Size(88, 23);
             label3.TabIndex = 5;
             label3.Text = "Password";
             label3.Click += label3_Click;
-            // 
-            // Close
-            // 
-            Close.BackColor = SystemColors.ControlDark;
-            Close.BackgroundImageLayout = ImageLayout.None;
-            Close.FlatStyle = FlatStyle.Flat;
-            Close.ForeColor = Color.Red;
-            Close.Location = new Point(262, 9);
-            Close.Name = "Close";
-            Close.Size = new Size(21, 24);
-            Close.TabIndex = 8;
-            Close.Text = "X";
-            Close.UseVisualStyleBackColor = false;
-            Close.Click += button1_Click;
-            // 
-            // Minimize
-            // 
-            Minimize.BackColor = SystemColors.ControlDark;
-            Minimize.BackgroundImageLayout = ImageLayout.None;
-            Minimize.FlatStyle = FlatStyle.Flat;
-            Minimize.Font = new Font("Ravie", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Minimize.ForeColor = Color.Fuchsia;
-            Minimize.Location = new Point(235, 9);
-            Minimize.Name = "Minimize";
-            Minimize.Size = new Size(21, 24);
-            Minimize.TabIndex = 9;
-            Minimize.Text = "-";
-            Minimize.UseVisualStyleBackColor = false;
-            Minimize.Click += Minimize_Click;
             // 
             // LoginLoginside
             // 
@@ -157,9 +128,10 @@ namespace WinFormsApp1
             LoginLoginside.FlatStyle = FlatStyle.Flat;
             LoginLoginside.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LoginLoginside.ForeColor = Color.Black;
-            LoginLoginside.Location = new Point(92, 250);
+            LoginLoginside.Location = new Point(105, 333);
+            LoginLoginside.Margin = new Padding(3, 4, 3, 4);
             LoginLoginside.Name = "LoginLoginside";
-            LoginLoginside.Size = new Size(100, 32);
+            LoginLoginside.Size = new Size(114, 43);
             LoginLoginside.TabIndex = 10;
             LoginLoginside.Text = "Login";
             LoginLoginside.UseVisualStyleBackColor = false;
@@ -167,21 +139,19 @@ namespace WinFormsApp1
             // 
             // Loginloginform
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
-            ClientSize = new Size(292, 311);
+            ClientSize = new Size(334, 415);
             Controls.Add(LoginLoginside);
-            Controls.Add(Minimize);
-            Controls.Add(Close);
-            Controls.Add(textBox2);
+            Controls.Add(txtPassword);
             Controls.Add(label2);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtUsername);
             Controls.Add(_1);
             Controls.Add(Loginloginform1);
             Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Loginloginform";
             Text = "Loginloginform";
             Load += Loginloginform_Load;
@@ -204,12 +174,10 @@ namespace WinFormsApp1
         private Label label1;
         private Label Loginloginform1;
         private Label _1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
         private Label label2;
         private Label label3;
-        private Button Close;
-        private Button Minimize;
         private Button LoginLoginside;
     }
 }

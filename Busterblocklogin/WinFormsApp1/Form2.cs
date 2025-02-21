@@ -44,18 +44,30 @@ namespace WinFormsApp1
         {
 
             // Herunder er de forskellige paths som definere filplaceringen hvor dataen gemmes/skal gemmes
-            string path = @"C:\Users\Bruger\Desktop\Database\Username.txt";//Paths
-            string path2 = @"C:\Users\Bruger\Desktop\Database\Password.txt";//Paths
-            string path3 = @"C:\Users\Bruger\Desktop\Database\Mail.txt";//Paths
-            string path4 = @"C:\Users\Bruger\Desktop\Database\Phonenumber.txt";//Paths
+            string path = @"C:\Users\claus\source\repos\NaP-Sewey\Busterblockting\Busterblocklogin\WinFormsApp1\Username.txt";//Paths
+            string path2 = @"C:\Users\claus\source\repos\NaP-Sewey\Busterblockting\Busterblocklogin\WinFormsApp1\Password.txt";//Paths
+            string path3 = @"C:\Users\claus\source\repos\NaP-Sewey\Busterblockting\Busterblocklogin\WinFormsApp1\Mail.txt";//Paths
+            string path4 = @"C:\Users\claus\source\repos\NaP-Sewey\Busterblockting\Busterblocklogin\WinFormsApp1\Phonenumber.txt";//Paths
 
 
             // Herunder er de forskellige data hvor der bliver hentet brugerinput fra de tekstboxe som er brugt.
             string username = txtUsername.Text; // Data
-            string password = txtUsername.Text;// Data
+            string password = txtPassword.Text;// Data
             string mail = txtMail.Text; // Data
             string phonenumber = txtPhonenumber.Text; // Data
             string confirmPassword = txtConfirmPassword.Text;
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword) || string.IsNullOrWhiteSpace(mail) || string.IsNullOrWhiteSpace(phonenumber))// Her bliver der tjekket om brugernavn og adgangskode er udfyldt
+            {
+                MessageBox.Show("ALL SPACES NEED TO BE FILLED");
+                return;
+            }
+
+            if (password != confirmPassword)
+            {
+                MessageBox.Show("PASSWORDS DOES NOT MATCH");
+                return;
+            }
 
             if (!File.Exists(username)) using (StreamWriter sw = File.CreateText(username))
 
@@ -103,17 +115,7 @@ namespace WinFormsApp1
 ;
 
 
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword) || string.IsNullOrWhiteSpace(mail) || string.IsNullOrWhiteSpace(phonenumber))// Her bliver der tjekket om brugernavn og adgangskode er udfyldt
-            {
-                MessageBox.Show("ALL SPACES NEED TO BE FILLED");
-                return;
-            }
-
-            if (password != confirmPassword)
-            {
-                MessageBox.Show("PASSWORDS DOES NOT MATCH");
-                return;
-            }
+            
 
             using (StreamReader sr = File.OpenText(path))
             {
@@ -152,11 +154,23 @@ namespace WinFormsApp1
             File.AppendAllText(path3, mail + Environment.NewLine);
             File.AppendAllText(path4, phonenumber + Environment.NewLine);
 
-            MessageBox.Show("YOUR NOW REGISTERED", "SUCCES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txtUsername.Clear();
+            txtPassword.Clear();
+            txtPhonenumber.Clear();
+            txtMail.Clear();
+            txtConfirmPassword.Clear();
 
-            
-          
-            
+            MessageBox.Show("YOUR NOW REGISTERED", "SUCCES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           
+            this.Hide();
+
+            Loginloginform loginloginForm = new Loginloginform();
+            loginloginForm.Show();
+
+
+
+
+
 
         }
         private void CreateFile(string filePath)

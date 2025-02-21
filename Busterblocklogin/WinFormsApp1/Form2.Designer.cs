@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            button1 = new Button();
-            Minimize = new Button();
             label1 = new Label();
-            Close = new Button();
             Loginloginform1 = new Label();
             textBox1 = new TextBox();
             _1 = new Label();
@@ -52,38 +49,11 @@
             txtPassword = new TextBox();
             SuspendLayout();
             // 
-            // button1
-            // 
-            resources.ApplyResources(button1, "button1");
-            button1.BackColor = Color.FromArgb(255, 128, 128);
-            button1.ForeColor = Color.Black;
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // Minimize
-            // 
-            resources.ApplyResources(Minimize, "Minimize");
-            Minimize.BackColor = SystemColors.ControlDark;
-            Minimize.ForeColor = Color.Fuchsia;
-            Minimize.Name = "Minimize";
-            Minimize.UseVisualStyleBackColor = false;
-            Minimize.Click += Minimize_Click;
-            // 
             // label1
             // 
             resources.ApplyResources(label1, "label1");
             label1.ForeColor = Color.Yellow;
             label1.Name = "label1";
-            // 
-            // Close
-            // 
-            resources.ApplyResources(Close, "Close");
-            Close.BackColor = SystemColors.ControlDark;
-            Close.ForeColor = Color.Red;
-            Close.Name = "Close";
-            Close.UseVisualStyleBackColor = false;
-            Close.Click += Close_Click;
             // 
             // Loginloginform1
             // 
@@ -226,22 +196,14 @@
             Controls.Add(_1);
             Controls.Add(textBox1);
             Controls.Add(Loginloginform1);
-            Controls.Add(Close);
             Controls.Add(label1);
-            Controls.Add(Minimize);
-            Controls.Add(button1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button button1;
-        private Button Minimize;
         private Label label1;
-        private Button Close;
         private Label Loginloginform1;
         private TextBox textBox1;
         private Label _1;
